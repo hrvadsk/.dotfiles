@@ -3,10 +3,21 @@ theme = "meliora"
 [editor]
 # Minimum severity to show a diagnostic after the end of a line:
 end-of-line-diagnostics = "hint"
+bufferline = "always"
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer"]
+
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-base-name", "file-modification-indicator", "read-only-indicator"]
+right = ["file-type", "diagnostics", "workspace-diagnostics", "separator", "selections", "primary-selection-length", "separator", "total-line-numbers", "position"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
 
 [editor.inline-diagnostics]
 # Minimum severity to show a diagnostic on the primary cursor's line.
 # Note that `cursor-line` diagnostics are hidden in insert mode.
 cursor-line = "error"
 # Minimum severity to show a diagnostic on other lines:
-# other-lines = "error"
+[editor.file-picker]
+hidden = false
