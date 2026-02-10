@@ -1,0 +1,6 @@
+singleton CpuService 1.0 CpuService.qml
+singleton MemoryService 1.0 MemoryService.qml
+CpuWidget 1.0 CpuWidget.qml
+MemoryWidget 1.0 MemoryWidget.qml
+SystemWidget 1.0 SystemWidget.qml
+WallpaperWindow 1.0 WallpaperWindow.qml
