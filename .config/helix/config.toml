@@ -5,6 +5,16 @@ theme = "meliora"
 end-of-line-diagnostics = "hint"
 bufferline = "always"
 gutters = ["diagnostics", "spacer", "line-numbers", "spacer"]
+scrolloff = 999
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
 
 [editor.statusline]
 left = ["mode", "spinner"]
@@ -13,6 +23,11 @@ right = ["file-type", "diagnostics", "workspace-diagnostics", "separator", "sele
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
+
+[editor.indent-guides]
+render = true
+character = "|"
+skip-levels = 1
 
 [editor.inline-diagnostics]
 # Minimum severity to show a diagnostic on the primary cursor's line.
